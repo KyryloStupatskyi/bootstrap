@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header class="header bg-warning mb-5 pt-5">
+    <div class="container">
+      <div class="row">
+        <h1 class="col text-center text-white pb-3">TAXI</h1>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo-image" src="assets/img/logo.png" alt="loading">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Passenger</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Download the app</a></li>
+                <li><a class="dropdown-item" href="#">Our cities</a></li>
+                <li><a class="dropdown-item" href="#">Information</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Сall and Order +48 881 123 456</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Driver</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">FAQ for Drivers</a></li>
+                <li><a class="dropdown-item" href="#">Join us</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Maps</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active link-active" aria-current="page" href="#">EN</a>
+            </li>
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link active link-active" aria-current="page" href="#" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <main class="col-xxl-7 col-xl-8 mb-5 main">
+        <h2 class="text-center">Our cars</h2>
+        <div id="slider-primary" class="carousel slide mt-3" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider-primary" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slider-primary" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider-primary" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slider-primary" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/logo1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Bentley Continental GT</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/logo2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Urus Pearl</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/logo3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Chevrolet Corvette zr1 c6</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/logo4.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mitsubishi Pajero</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider-primary" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider-primary" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </main>
+
+      <aside class="col-xxl-3 col-xl-4 col-lg-6 order-xl-first mb-5 left">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Bentley Continental GT
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                The Bentley Continental GT is a grand tourer manufactured and marketed by British automaker Bentley
+                Motors since 2003. It was the first car released by Bentley under Volkswagen AG management, after the
+                company's acquisition in 1998, and the first Bentley to employ mass production manufacturing techniques.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Lamborghini Urus
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                The Lamborghini Urus is a high performance luxury SUV manufactured by Italian automobile manufacturer
+                Lamborghini. It was unveiled on 4 December 2017 and was put on the market for the 2018 model year.
+                The name comes from the urus, the ancestor of modern domestic cattle, also known as the aurochs.
+                After four years, Lamborghini hit a major milestone, producing 20,000 of these SUVs, making the Urus the
+                company's best-selling model in the shortest time.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Chevrolet Corvette
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                The Chevrolet Corvette, colloquially known in the USA as the 'Vette, is a two-door, two-passenger
+                luxury sports car manufactured and marketed by Chevrolet since 1953. With eight design
+                generations, noted sequentially from C1 to C8, the Corvette is noted for its performance and distinctive
+                fiberglass or composite panels. It was front-engined through 2019 and mid-engined since.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Mitsubishi Pajero
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Mitsubishi Pajero – model samochodu terenowego produkowany przez japońską firmę Mitsubishi Motors.
+                Pierwsza generacja samochodu (L040) została wdrożona do produkcji w 1982 roku, jednak prace nad tym
+                modelem rozpoczęły się już 3 lata wcześniej. W 1973 roku powstał prototyp pierwszej generacji
+                Pajero.
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <aside class="col-xxl-2 col-xl-12 col-lg-6 mb-5 right">
+        <h2> Our localization</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20137.298190531776!2d20.582407279101556!3d50.88370690000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47182751efa5587b%3A0x1d6b201546884854!2sLIDER%20TAXI%20Kielce!5e0!3m2!1sru!2spl!4v1667312423427!5m2!1sru!2spl"
+          width="200" height="270" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="footer bg-warning mt-5 py-2 text-center text-white fixed-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col">made by Kyrylo Stupatskyi</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Example form</h1>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="mb-3">
+              <label class="form-label" for="login">Create your username</label>
+              <input class="form-control" id="login" type="text" placeholder="login">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="pass">Create your INDIVIDUAL password</label>
+              <input class="form-control" id="pass" type="text" placeholder="pass">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="email">Enter your email</label>
+              <input class="form-control" id="email" type="text" placeholder="email">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="number">Enter your mobile number</label>
+              <input class="form-control" id="number" type="text" placeholder="+48 123 456 789">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="localization">Enter your localization</label>
+              <input class="form-control" id="localization" type="text" placeholder="+48 123 456 789">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary bg-warning" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-dark">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.logo-image {
+  height: 49px;
+  margin-top: -18px;
+  margin-bottom: -10px;
+}
+
+.link-active:hover {
+  color: #fcb630;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.nav-item:hover .nav-link {
+  color: #fcb630;
+}
